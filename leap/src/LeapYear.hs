@@ -1,10 +1,10 @@
 module LeapYear (isLeapYear) where
 
+-- using if--else
 isLeapYear :: Integer -> Bool
-isLeapYear year
-  | year `mod` 400 == 0 = False
-  | year `mod` 100 == 0 = False
-  | year `mod` 4 == 0 = True
-  | otherwise = False
-
--- isLeapYear year = error "You need to implement this function."
+isLeapYear year =
+  if divisibleBy 100
+  then divisibleBy 400
+  else divisibleBy 4
+  where
+    divisibleBy number = year `mod` number == 0
