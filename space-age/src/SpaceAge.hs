@@ -7,10 +7,10 @@ data Planet = Mercury
             | Jupiter
             | Saturn
             | Uranus
-            | Neptune
+            | Neptune deriving (Show)
 
 yearsOf :: Planet -> Float
-yearsOf Mercury = 0.2408467
+yearsOf Mercury  = 0.2408467
 yearsOf Venus    = 0.61519726
 yearsOf Earth    = 1
 yearsOf Mars     = 1.8808158
