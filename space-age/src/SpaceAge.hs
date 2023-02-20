@@ -18,5 +18,6 @@ ageOn planet seconds = earth_years / case planet of
   Jupiter -> 11.862615
   Saturn  -> 29.447498
   Uranus  -> 84.016846
+  Neptune -> 164.79132
   where
     earth_years = seconds / 31557600
