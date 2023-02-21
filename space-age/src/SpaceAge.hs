@@ -21,3 +21,5 @@ ageOn planet seconds = earth_years / case planet of
   Neptune -> 164.79132
   where
     earth_years = seconds / 31557600
+
+-- https://learnyouahaskell.github.io/making-our-own-types-and-typeclasses
